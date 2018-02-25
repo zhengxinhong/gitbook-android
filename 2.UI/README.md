@@ -10,3 +10,5 @@
 
 * vertical ['vɝtɪkl] adj.垂直的
 * horezontal ['hɔrə'zɑntl] adj.水平的
+　
+* divide [dɪ'vaɪd] vt.划分
