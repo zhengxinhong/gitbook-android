@@ -7,3 +7,6 @@
 * gravity [ˈɡrævətɪ] n.重力，地心引力 
 
 * match [mætʃ] 匹配，相配
+
+* vertical ['vɝtɪkl] adj.垂直的
+* horezontal ['hɔrə'zɑntl] adj.水平的
