@@ -1,6 +1,7 @@
 # gitbook-android
 
-(android官网)[https://developer.android.google.cn]
+[android官网](https://developer.android.google.cn)
+
 ##快捷键
 
 ### 编辑
