@@ -12,3 +12,32 @@
 
 * >###这里就是最重要的一点了，我们需要用到在 Api23 中新加入的方法 checkSelfPermission()和requestPermissions()
 
+```java
+// 检查是否已经开启通讯录读取权限
+if (ContextCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
+      // 请求开启通讯录读取权限
+      ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_CONTACTS},123);
+      System.out.println("XH-没有权限");
+      return;
+   }else {
+      System.out.println("XH-已经获取权限");
+   }
+   
+   @Override
+   public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+   super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+      switch (requestCode){
+      case 123:{
+         if (grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+            GetNumber.getNumber(this);
+            lv = (ListView)findViewById(R.id.phoneList);
+            adapter = new MyAdapter(GetNumber.lists,this);
+            lv.setAdapter(adapter);
+         }else{
+         
+            System.out.println("XH-拒绝授权");
+         }
+      }
+   }
+}
+```
