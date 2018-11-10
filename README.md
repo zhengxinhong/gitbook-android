@@ -75,3 +75,30 @@ http://services.gradle.org/distributions/
 来源：CSDN 
 原文：https://blog.csdn.net/lyc088456/article/details/79024528 
 版权声明：本文为博主原创文章，转载请附上博文链接！
+
+
+
+    detaillist =     (
+                {
+            number = 1;
+            price = 25;
+            productid = pro0807;
+        }
+    );
+    pdate = "2018-11-10";
+    pid = CGRK0052;
+    purchasep = 1;
+    sub = 25;
+    supplierid = 16;
+
+
+
+
+
+
+
+
+
+
+
+
