@@ -28,10 +28,12 @@ http://services.gradle.org/distributions/
      谷歌中国
      github
      开源中国社区
-     https://developer.android.com/index.html
-      http://wanandroid.com/
 
-    安卓巴士
+https://developer.android.com/index.html
+
+http://wanandroid.com/
+
+    安卓巴士  http://www.apkbus.com/plugin.php?id=k_misign:sign
     
       
 四，国内开源镜像站点
