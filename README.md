@@ -31,6 +31,8 @@ http://services.gradle.org/distributions/
      https://developer.android.com/index.html
       http://wanandroid.com/
 
+    安卓巴士
+    
       
 四，国内开源镜像站点
     
