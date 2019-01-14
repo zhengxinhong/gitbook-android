@@ -74,12 +74,6 @@ http://wanandroid.com/
 
     
 
---------------------- 
-作者：梁生zZ 
-来源：CSDN 
-原文：https://blog.csdn.net/lyc088456/article/details/79024528 
-版权声明：本文为博主原创文章，转载请附上博文链接！
-
 
 
     detaillist =     (
