@@ -14,7 +14,7 @@
 
 ```java
 // 检查是否已经开启通讯录读取权限
-if (ContextCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
+   if (ContextCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
       // 请求开启通讯录读取权限
       ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_CONTACTS},123);
       System.out.println("XH-没有权限");
