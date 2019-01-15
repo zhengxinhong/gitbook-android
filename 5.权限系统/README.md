@@ -12,6 +12,7 @@
 
 * >###这里就是最重要的一点了，我们需要用到在 Api23 中新加入的方法 checkSelfPermission()和requestPermissions()
 
+### 通讯录读取权限
 ```java
 // 检查是否已经开启通讯录读取权限
    if (ContextCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED){
@@ -40,4 +41,39 @@
       }
    }
 }
+```
+### 定位权限
+
+```java
+  // GPS是否可用
+
+    public static final boolean isGpsEnable(final Context context) {
+        LocationManager locationManager
+                = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
+        boolean gps = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        boolean network = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+        if (gps || network) {
+            return true;
+        }
+        return false;
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case 123: {
+                if(grantResults[0] == PackageManager.PERMISSION_GRANTED){//用户同意权限,执行我们的操作
+
+
+                }else{//用户拒绝之后,当然我们也可以弹出一个窗口,直接跳转到系统设置页面
+                    Toast.makeText(BluetoothActivity.this,"未开启定位权限,请手动到设置去开启权限",Toast.LENGTH_LONG).show();
+                }
+                break;
+            }
+            default:break;
+        }
+    }
 ```
